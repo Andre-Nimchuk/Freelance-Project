@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="icon" href="img\home-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/arrow.css">
     <title>Ideal Standart | Начало</title>
 </head>
 
@@ -47,38 +49,78 @@
             </div>
         </nav>
     </header>
-    <hr>
+    <hr style="margin-bottom: 0;">
 
     <section class="photo__slider">
         <div class="slideshow">
-
             <div class="mySlides fade">
-                <img src="../img/1.png" style="width:100%">
+                <img src="./img/bathroom-1-slider.jpg">
             </div>
 
             <div class="mySlides fade">
-                <img src="../img/2.jpg" style="width:100%">
+                <img src="./img/bathroom-2-slider.jpg">
             </div>
 
             <div class="mySlides fade">
-                <img src="../img/3.jpg" style="width:100%">
+                <img src="./img/bathroom-3-slider.jpg">
             </div>
+        </div>
+        <div class="slider__arrow">
+            <div class="arrows"></div>
         </div>
     </section>
 
     <section class="block__posts">
+        <div class="content__block_post">
 
+        </div>
     </section>
 
     <section class="content__link">
 
     </section>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__box">
+            <div class="footer__left">
+                <p>© Идеал Стандарт – Видима АД</p>
+                <p>Разглеждането и използването на този уебсайт е предмет на условията, регламентирани в нашите Правна
+                    информация, Политика на конфиденциалност и "Бисквитки".</p>
+            </div>
+            <div class="footer__right">
+                <div class="site_link borderR">
+                    <a href="#">Карта сайта</a>
+                </div>
+                <div class="site_link borderR">
+                    <a href="#">Договір</a>
+                </div>
+                <div class="site_link">
+                    <a href="#">Гарантія</a>
+                </div>
+                <div class="select">
+                    <input type="hidden" name="item" value="1">
+                    <div class="selected">Arabian</div>
+                    <div class="option-list">
+                        <div class="option" data-select-val="0">
+                            <div>All cuisines</div>
+                        </div>
+                        <div class="option" data-select-val="1">
+                            <div>Arabian</div>
+                        </div>
+                        <div class="option" data-select-val="2">
+                            <div>Asian</div>
+                        </div>
+                        <div class="option" data-select-val="3">
+                            <div>Bagels</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="scripts\mainSR.js"></script>
+    <script src="scripts/selectBoxLanguage.js"></script>
+    <script src="scripts/mainSR.js"></script>
 </body>
 
 </html>
