@@ -2,22 +2,152 @@
     margin: 0;
     padding: 0;
 }
-
 .header__nav {
     width: 100%;
     height: 100px;
 }
 
+.above__menu-block {
+    width: 100%;
+    height: 10px;
+    background-color: #e6e7e7;
+    
+}
+
 .menu {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
 }
 
+/* above menu section with search input*/
+
+.block__search-section {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.block__search-container {
+    width: 75%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block__search {
+    width: 50%;
+    height: 30px;
+    background-color: #e6e7e7;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.block__search-links {
+    width: 47%;
+    height: 20px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search_link {
+    padding-right: 10px;
+}
+
+.search_link a{
+    color: #8b8b97;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.search_link a:nth-child(1){
+    color: #005091;
+}
+
+.search_link a:hover{
+    color: #005091;
+}
+
+.block__search-links div:nth-child(2) {
+    padding-left: 10px;
+}
+
+.block__search-links div:nth-child(3) {
+    padding-left: 10px;
+}
+
+/* stlye block search input on WS*/
+
+.block__search-input-container {
+    width: 40%;
+    height: 27px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+* {box-sizing: border-box;}
+
+body{margin: 0;}
+
+form {
+  position: relative;
+  width: 250px;
+  z-index: 1;
+}
+
+.form__search {
+    border-radius: 5px;
+    background: #fff;
+    margin-top: -5px;
+    z-index: 1;
+}
+
+.form__search input, .form__search button {
+  outline: none;
+  background: transparent;
+}
+
+.form__search input {
+  width: 100%;
+  height: 32px;
+  padding-left: 15px;
+  border: 1px solid #8b8b97;
+  border-radius: 5px;
+}
+
+.form__search button {
+  border: none;
+  height: 38px;
+  width: 27px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.form__search button:before {
+  content: url('/img/lupa.png');
+}
+
+.form__search input:focus {
+  background-color: #e6e7e7;
+  border-radius: 5px;
+}
+
+/* header menu style*/
+
 .full__menu {
     width: 75%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
