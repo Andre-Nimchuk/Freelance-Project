@@ -39,3 +39,4 @@ function showSlides(n) {
      slides[slideIndex-1].style.display = "block";
      setTimeout(showSlides, 8000);
 }
+
